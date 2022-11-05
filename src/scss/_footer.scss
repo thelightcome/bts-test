@@ -1,0 +1,172 @@
+.footer {
+  background: #424d53;
+  color: #ffffff;
+
+  .row {
+    &:first-child {
+      padding-top: 5.3rem;
+      padding-bottom: 0rem;
+      @media screen and (min-width: #{map-get($grid-breakpoints, "lg")}) {
+        margin-bottom: 4.2rem;
+      }
+    }
+    &:last-child {
+      padding-top: 1.9rem;
+      padding-bottom: 2.3rem;
+    }
+
+    & > div:not(:last-child) {
+      margin-bottom: 2.5rem;
+      @media screen and (min-width: #{map-get($grid-breakpoints, "md")}) {
+        margin-bottom: 0rem;
+      }
+    }
+
+    & > div {
+      text-align: center;
+      @media screen and (min-width: #{map-get($grid-breakpoints, "md")}) {
+        text-align: left;
+      }
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+    margin-top: -2.1rem;
+    margin-bottom: 1.4rem;
+
+    @media screen and (min-width: #{map-get($grid-breakpoints, "lg")}) {
+      margin-bottom: 0rem;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+
+  &__list {
+    margin-bottom: 1.4rem;
+    @media screen and (min-width: #{map-get($grid-breakpoints, "md")}) {
+      margin-bottom: 3.6rem;
+    }
+
+    & ~ p {
+      margin-bottom: 0.9rem;
+    }
+  }
+
+  &__item {
+    margin-bottom: 1.6rem;
+
+    &:last-child {
+      margin-bottom: 0rem;
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &__bottom {
+    p:last-child {
+      gap: 0rem 2.2rem;
+    }
+  }
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.7rem;
+
+  @media screen and (min-width: #{map-get($grid-breakpoints, "md")}) {
+    justify-content: flex-start;
+  }
+
+  &__link {
+    display: block;
+  }
+
+  .telegram {
+    width: 2.3rem;
+    height: 2.1rem;
+    background: url('../img/telegram.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .instagram {
+    width: 2.1rem;
+    height: 2.1rem;
+    background: url('../img/instagram.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .youtube {
+    width: 2.9rem;
+    height: 2.1rem;
+    background: url('../img/youtube.png') no-repeat center;
+    background-size: contain;
+  }
+}
+
+.pays {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.9rem;
+
+  @media screen and (min-width: #{map-get($grid-breakpoints, "md")}) {
+    justify-content: flex-start;
+  }
+
+  &__link {
+    display: block;
+  }
+
+  .mir {
+    width: 5.5rem;
+    height: 1.5rem;
+    background: url('../img/mir.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .visa {
+    width: 4.7rem;
+    height: 1.5rem;
+    background: url('../img/visa.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .money {
+    width: 7.6rem;
+    height: 1.5rem;
+    background: url('../img/iomoney.png') no-repeat center;
+    background-size: contain;
+  }
+}
+
+.contacts {
+  line-height: 3rem;
+
+  &:first-child {
+    margin-bottom: 1.5rem;
+  }
+
+  a {
+    display: block;
+    color: inherit;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+}

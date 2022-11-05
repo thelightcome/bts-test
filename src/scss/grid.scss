@@ -1,0 +1,22 @@
+$grid-columns: 12;
+
+$grid-gutter-width: 1.5rem;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 360px,
+  md: 840px,
+  lg: 1124px,
+  xl: 1320px,
+  xxl: 2620px,
+);
+
+$container-max-widths: (
+  sm: 320px,
+  md: 780px,
+  lg: 960px,
+  xl: 1260px,
+  xxl: 2560px,
+);
+
+@import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';

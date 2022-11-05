@@ -1,0 +1,188 @@
+.reviews {
+  padding-top: 8rem;
+  margin-bottom: 15.942rem;
+  font-size: 1.8rem;
+
+  &__title1 {
+    margin-bottom: 5.4rem;
+  }
+
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 29.8rem;
+    margin-bottom: 4rem;
+
+    @media screen and (min-width: #{map-get($grid-breakpoints, "md")}) {
+      margin-bottom: 8.7rem;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 1.7rem 1.5rem 1.8rem;
+    border: none;
+    font-family: inherit;
+    border-radius: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.7rem;
+    color: #b1acc1;
+    margin-bottom: 1.8rem;
+    background: #f0f9ff;
+    font-family: inherit;
+
+    &--active {
+      background: #ffd86b;
+      color: #303b4d;
+    }
+
+    &:last-child {
+      margin-bottom: 0rem;
+    }
+  }
+
+  &__linked-btn {
+    margin-top: 2.7rem;
+    margin-bottom: 4.5rem;
+
+    @media screen and (min-width: #{map-get($grid-breakpoints, "md")}) {
+      margin-bottom: 0rem;
+    }
+  }
+}
+
+.tab {
+  display: none;
+  width: 100%;
+
+  &--active {
+    display: block;
+  }
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+
+  @media screen and (min-width: #{map-get($grid-breakpoints, "md")}) {
+    flex-direction: row;
+  }
+
+  &__current {
+    width: 100%;
+    margin-bottom: 1.962rem;
+    flex-grow: 1;
+
+    @media screen and (min-width: #{map-get($grid-breakpoints, "md")}) {
+      max-width: 61.5rem;
+      margin-bottom: 0rem;
+      margin-right: 1.962rem;
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    & > * {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      margin: 0 auto;
+      overflow: scroll;
+
+      &::-webkit-scrollbar {
+        width: 2px;
+        height: 2px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      width: 2px;
+      height: 2px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    @media screen and (min-width: #{map-get($grid-breakpoints, "md")}) {
+      max-width: 19.238rem;
+      flex-direction: column;
+      height: 100%;
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+  }
+
+  &__item {
+    overflow: hidden;
+    max-width: 33%;
+
+    &::-webkit-scrollbar {
+      height: 2px;
+      width: 2px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    @media screen and (min-width: #{map-get($grid-breakpoints, "md")}) {
+      max-width: 100%;
+      max-height: 13rem;
+    }
+
+    & > * {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      margin: 0 auto;
+      pointer-events: none;
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
