@@ -12,44 +12,48 @@
 
 <body>
   <header class="header">
-  <div class="container">
-    <a href="/" class="header__logo" aria-label="логотип"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logotype" /></picture></a>
-    <nav class="nav">
-      <button class="nav__btn" aria-label="Кнопак навигации">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <div class="nav__collapse">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#tariffs" class="nav__link" aria-label="Цены">Цены</a>
-          </li>
-          <li class="nav__item">
-            <a href="#reviews" class="nav__link" aria-label="Отзывы">Отзывы</a>
-          </li>
-          <li class="nav__item">
-            <a href="#functions" class="nav__link" aria-label="Особенности платформы">Особенности платформы</a>
-          </li>
-        </ul>
-        <div class="nav__ctrl">
-          <a href="#" class="link-btn authorization" aria-label="Авторизоваться">Авторизоваться</a>
-          <a href="#" class="login" aria-label="Страница входа"></a>
-          <div class="dropdown langs">
-            <button class="dropdown-toggle langs__btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-              aria-expanded="false" aria-label="Смена языка">
-              EN
-            </button>
-            <ul class="dropdown-menu langs__options" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item langs__option" href="#" aria-label="Переключение на английский">EN</a></li>
-              <li><a class="dropdown-item langs__option" href="#" aria-label="Переключение на русский">RU</a></li>
-            </ul>
+    <div class="container">
+      <a href="/" class="header__logo" aria-label="логотип">
+        <picture>
+          <source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logotype" />
+        </picture>
+      </a>
+      <nav class="nav">
+        <button class="nav__btn" aria-label="Кнопак навигации">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav__collapse">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#tariffs" class="nav__link" aria-label="Цены">Цены</a>
+            </li>
+            <li class="nav__item">
+              <a href="#reviews" class="nav__link" aria-label="Отзывы">Отзывы</a>
+            </li>
+            <li class="nav__item">
+              <a href="#functions" class="nav__link" aria-label="Особенности платформы">Особенности платформы</a>
+            </li>
+          </ul>
+          <div class="nav__ctrl">
+            <a href="#" class="link-btn authorization" aria-label="Авторизоваться">Авторизоваться</a>
+            <a href="#" class="login" aria-label="Страница входа"></a>
+            <div class="dropdown langs">
+              <button class="dropdown-toggle langs__btn" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false" aria-label="Смена языка">
+                EN
+              </button>
+              <ul class="dropdown-menu langs__options" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item langs__option" href="#" aria-label="Переключение на английский">EN</a></li>
+                <li><a class="dropdown-item langs__option" href="#" aria-label="Переключение на русский">RU</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-  </div>
-</header>
+      </nav>
+    </div>
+  </header>
 
   <main>
 
@@ -228,7 +232,9 @@
             </div>
           </div>
           <div class="col-12 col-lg-6 overflow-hidden banner__image">
-            <picture><source srcset="img/img-1.webp" type="image/webp"><img class="lazyload" data-src="img/img-1.jpg" alt="" /></picture>
+            <picture>
+              <source srcset="img/img-1.webp" type="image/webp"><img class="lazyload" data-src="img/img-1.jpg" alt="" />
+            </picture>
           </div>
         </div>
       </div>
@@ -277,12 +283,15 @@
                 <p>Повышайте качество и эффективность работы Вашего бизнеса вместе с нами</p>
               </div>
             </div>
-            <a href="#form" class="link-btn reviews__linked-btn order-md-2" aria-label="Попробовать бесплатно">Попробовать бесплатно</a>
+            <a href="#form" class="link-btn reviews__linked-btn order-md-2"
+              aria-label="Попробовать бесплатно">Попробовать бесплатно</a>
             <div class="reviews__btns order-md-0">
-              <button class="reviews__btn reviews__btn--active" data-role="btn" data-id="0"
-                data-target="tab" aria-label="Видеоотзывы">Видеоотзывы</button>
-              <button class="reviews__btn" data-role="btn" data-id="1" data-target="tab" aria-label="Текстовые отзывы">Текстовые отзывы</button>
-              <button class="reviews__btn" data-role="btn" data-id="2" data-target="tab" aria-label="Фотоотзывы">Фотоотзывы</button>
+              <button class="reviews__btn reviews__btn--active" data-role="btn" data-id="0" data-target="tab"
+                aria-label="Видеоотзывы">Видеоотзывы</button>
+              <button class="reviews__btn" data-role="btn" data-id="1" data-target="tab"
+                aria-label="Текстовые отзывы">Текстовые отзывы</button>
+              <button class="reviews__btn" data-role="btn" data-id="2" data-target="tab"
+                aria-label="Фотоотзывы">Фотоотзывы</button>
             </div>
           </div>
           <div class="col-12 col-md-8 d-flex align-items-center">
@@ -294,13 +303,22 @@
                 </div>
                 <div class="slider__list" data-role="slider-list">
                   <div class="slider__item" data-role="slider-item">
-                    <picture><source srcset="img/2-v-preview.webp" type="image/webp"><img class="lazyload" src="img/2-v-preview.jpg" data-preview="videos/2.mp4" alt=""></picture>
+                    <picture>
+                      <source srcset="img/2-v-preview.webp" type="image/webp"><img class="lazyload"
+                        data-src="img/2-v-preview.jpg" data-preview="videos/2.mp4" alt="">
+                    </picture>
                   </div>
                   <div class="slider__item" data-role="slider-item">
-                    <picture><source srcset="img/3-v-preview.webp" type="image/webp"><img class="lazyload" src="img/3-v-preview.jpg" data-preview="videos/3.mp4" alt=""></picture>
+                    <picture>
+                      <source srcset="img/3-v-preview.webp" type="image/webp"><img class="lazyload"
+                        data-src="img/3-v-preview.jpg" data-preview="videos/3.mp4" alt="">
+                    </picture>
                   </div>
                   <div class="slider__item" data-role="slider-item">
-                    <picture><source srcset="img/4-v-preview.webp" type="image/webp"><img class="lazyload" src="img/4-v-preview.jpg" data-preview="videos/4.mp4" alt=""></picture>
+                    <picture>
+                      <source srcset="img/4-v-preview.webp" type="image/webp"><img class="lazyload"
+                        data-src="img/4-v-preview.jpg" data-preview="videos/4.mp4" alt="">
+                    </picture>
                   </div>
                 </div>
               </div>
@@ -308,29 +326,35 @@
             <div class="tab" data-role="tab" data-id="1">
               <div class="slider" data-role="slider">
                 <div class="slider__current" data-role="slider-current">
-                  <picture><source srcset="img/5.webp" type="image/webp"><img class="lazyload" data-src="img/5.jpg" data-preview="img/5-preview.jpg" alt=""></picture>
+                  <picture>
+                    <source srcset="img/5.webp" type="image/webp"><img class="lazyload" data-src="img/5.jpg"
+                      data-preview="img/5-preview.jpg" alt="">
+                  </picture>
                 </div>
                 <div class="slider__list" data-role="slider-list">
-                  <div class="slider__item" data-role="slider-item"><img class="lazyload" src="img/6-preview.jpg"
+                  <div class="slider__item" data-role="slider-item"><img class="lazyload" data-src="img/6-preview.jpg"
                       data-preview="img/6.jpg" alt=""></div>
-                  <div class="slider__item" data-role="slider-item"><img class="lazyload"
-                    src="img/7-preview.jpeg" data-preview="img/7.jpeg" alt=""></div>
-                  <div class="slider__item" data-role="slider-item"><img class="lazyload"
-                    src="img/8-preview.jpeg" data-preview="img/8.jpeg" alt=""></div>
+                  <div class="slider__item" data-role="slider-item"><img class="lazyload" data-src="img/7-preview.jpeg"
+                      data-preview="img/7.jpeg" alt=""></div>
+                  <div class="slider__item" data-role="slider-item"><img class="lazyload" data-src="img/8-preview.jpeg"
+                      data-preview="img/8.jpeg" alt=""></div>
                 </div>
               </div>
             </div>
             <div class="tab" data-role="tab" data-id="2">
               <div class="slider" data-role="slider">
                 <div class="slider__current" data-role="slider-current">
-                  <picture><source srcset="img/1.webp" type="image/webp"><img class="lazyload" data-src="img/1.jpg" data-preview="img/1-preview.jpg" alt=""></picture>
+                  <picture>
+                    <source srcset="img/1.webp" type="image/webp"><img class="lazyload" data-src="img/1.jpg"
+                      data-preview="img/1-preview.jpg" alt="">
+                  </picture>
                 </div>
                 <div class="slider__list" data-role="slider-list">
-                  <div class="slider__item" data-role="slider-item"><img class="lazyload"
-                    src="img/7-preview.jpeg" data-preview="img/7.jpeg" alt=""></div>
-                  <div class="slider__item" data-role="slider-item"><img class="lazyload" src="img/3-preview.jpg"
+                  <div class="slider__item" data-role="slider-item"><img class="lazyload" data-src="img/7-preview.jpeg"
+                      data-preview="img/7.jpeg" alt=""></div>
+                  <div class="slider__item" data-role="slider-item"><img class="lazyload" data-src="img/3-preview.jpg"
                       data-preview="img/3.jpg" alt=""></div>
-                  <div class="slider__item" data-role="slider-item"><img class="lazyload" src="img/6-preview.jpg"
+                  <div class="slider__item" data-role="slider-item"><img class="lazyload" data-src="img/6-preview.jpg"
                       data-preview="img/6.jpg" alt=""></div>
                 </div>
               </div>
@@ -492,7 +516,7 @@
               времени и трекинга, в также с другими многофункциональными сервисами/p>
           </div>
           <div class="col-12 col-md-6 order-md-0 d-flex justify-content-end px-4"><img class="lazyload"
-            data-src="img/img-2.jpg" class="img-response" alt=""></div>
+              data-src="img/img-2.jpg" class="img-response" alt=""></div>
         </div>
         <div class="row">
           <div class="col-12 col-md-6 mb-4 mb-md-0 col-lg-5 offset-lg-1">
@@ -500,8 +524,8 @@
             <p>Корпоративный портал JOBTRON может интегрироваться с разными CRM, сревисами рассылки, системами учета
               времени и трекинга, в также с другими многофункциональными сервисами</p>
           </div>
-          <div class="col-12 col-md-6 d-flex justify-content-start px-4"><img class="lazyload"
-            data-src="img/img-3.jpg" class="img-response" alt=""></div>
+          <div class="col-12 col-md-6 d-flex justify-content-start px-4"><img class="lazyload" data-src="img/img-3.jpg"
+              class="img-response" alt=""></div>
         </div>
         <div class="row">
           <div class="col-12 col-md-6 mb-4 mb-md-0 order-md-1 col-lg-5">
@@ -510,7 +534,7 @@
               времени и трекинга, в также с другими многофункциональными сервисами</p>
           </div>
           <div class="col-12 col-md-6 order-md-0 d-flex justify-content-end px-4"><img class="lazyload"
-            data-src="img/img-4.jpg" class="img-response" alt=""></div>
+              data-src="img/img-4.jpg" class="img-response" alt=""></div>
         </div>
       </div>
     </section>
@@ -557,7 +581,8 @@
                 <input class="request__input" type="number" placeholder="Номер телефона">
               </div>
               <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
-                <button class="link-btn request__btn" type="submit" aria-label="Попробовать бесплатно">Попробовать бесплатно</button>
+                <button class="link-btn request__btn" type="submit" aria-label="Попробовать бесплатно">Попробовать
+                  бесплатно</button>
               </div>
             </form>
           </div>
@@ -567,79 +592,83 @@
   </main>
 
   <footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div
-        class="col-12 col-md-12 d-flex justify-content-center col-lg-2 offset-lg-0 justify-content-lg-start col-xl-3">
-        <a href="/" class="footer__logo" aria-label="логотип">
-          <picture><source srcset="img/footer-logo.webp" type="image/webp"><img data-src="img/footer-logo.png" alt="footer logotype"></picture>
-        </a>
-      </div>
-      <div class="col-12 col-md-4 offset-lg-1 col-lg-3 offset-xl-0">
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a href="#tariffs" class="footer__link" aria-label="Цены">Цены</a>
-          </li>
-          <li class="footer__item">
-            <a href="#reviews" class="footer__link" aria-label="Отзывы">Отзывы</a>
-          </li>
-          <li class="footer__item">
-            <a href="#functions" class="footer__link" aria-label="Особенности платформы">Особенности платформы</a>
-          </li>
-        </ul>
-        <p>Подпишитесь на новости:</p>
-        <ul class="socials">
-          <li class="socials__item"><a href="https://web.telegram.org/?legacy=1#/im" class="socials__link telegram"
-              aria-label="telegram"></a></li>
-          <li class="socials__item"><a href="https://www.instagram.com/" target="_blank" class="socials__link instagram"
-              aria-label="instagram"></a></li>
-          <li class="socials__item"><a href="https://www.youtube.com/" class="socials__link youtube"
-              aria-label="youtube"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-4 col-lg-3">
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a href="/" class="footer__link" aria-label="Документы">Документы</a>
-          </li>
-          <li class="footer__item">
-            <a href="/" class="footer__link" aria-label="Информация об оплате">Информация об оплате</a>
-          </li>
-          <li class="footer__item">
-            <a href="/" class="footer__link" aria-label="Лицензионное соглашение">Лицензионное соглашение</a>
-          </li>
-        </ul>
-        <p>Способы оплаты:</p>
-        <ul class="pays">
-          <li class="pays__item"><a href="/" class="pays__link mir" aria-label="оплата мир"></a></li>
-          <li class="pays__item"><a href="/" class="pays__link visa" aria-label="оплата виза"></a></li>
-          <li class="pays__item"><a href="/" class="pays__link money" aria-label="оплата монеи"></a></li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-4 col-lg-3">
-        <div class="contacts">
-          <p>Отдел продаж:</p>
-          <a href="tel:+7777880800" aria-label="номер">8 777 788 08 00</a>
-          <a href="tel:+7777880800" aria-label="номер">8 777 788 08 00</a>
-          <a href="mailto:sales@jobtron.com" aria-label="почта">sales@jobtron.com</a>
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-12 col-md-12 d-flex justify-content-center col-lg-2 offset-lg-0 justify-content-lg-start col-xl-3">
+          <a href="/" class="footer__logo" aria-label="логотип">
+            <picture>
+              <source srcset="img/footer-logo.webp" type="image/webp"><img data-src="img/footer-logo.png"
+                alt="footer logotype">
+            </picture>
+          </a>
         </div>
-        <div class="contacts">
-          <p>Отдел продаж:</p>
-          <a href="mailto:support@jobtron.com" aria-label="почта">support@jobtron.com</a>
+        <div class="col-12 col-md-4 offset-lg-1 col-lg-3 offset-xl-0">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#tariffs" class="footer__link" aria-label="Цены">Цены</a>
+            </li>
+            <li class="footer__item">
+              <a href="#reviews" class="footer__link" aria-label="Отзывы">Отзывы</a>
+            </li>
+            <li class="footer__item">
+              <a href="#functions" class="footer__link" aria-label="Особенности платформы">Особенности платформы</a>
+            </li>
+          </ul>
+          <p>Подпишитесь на новости:</p>
+          <ul class="socials">
+            <li class="socials__item"><a href="https://web.telegram.org/?legacy=1#/im" class="socials__link telegram"
+                aria-label="telegram"></a></li>
+            <li class="socials__item"><a href="https://www.instagram.com/" target="_blank"
+                class="socials__link instagram" aria-label="instagram"></a></li>
+            <li class="socials__item"><a href="https://www.youtube.com/" class="socials__link youtube"
+                aria-label="youtube"></a>
+            </li>
+          </ul>
         </div>
+        <div class="col-12 col-md-4 col-lg-3">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="/" class="footer__link" aria-label="Документы">Документы</a>
+            </li>
+            <li class="footer__item">
+              <a href="/" class="footer__link" aria-label="Информация об оплате">Информация об оплате</a>
+            </li>
+            <li class="footer__item">
+              <a href="/" class="footer__link" aria-label="Лицензионное соглашение">Лицензионное соглашение</a>
+            </li>
+          </ul>
+          <p>Способы оплаты:</p>
+          <ul class="pays">
+            <li class="pays__item"><a href="/" class="pays__link mir" aria-label="оплата мир"></a></li>
+            <li class="pays__item"><a href="/" class="pays__link visa" aria-label="оплата виза"></a></li>
+            <li class="pays__item"><a href="/" class="pays__link money" aria-label="оплата монеи"></a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3">
+          <div class="contacts">
+            <p>Отдел продаж:</p>
+            <a href="tel:+7777880800" aria-label="номер">8 777 788 08 00</a>
+            <a href="tel:+7777880800" aria-label="номер">8 777 788 08 00</a>
+            <a href="mailto:sales@jobtron.com" aria-label="почта">sales@jobtron.com</a>
+          </div>
+          <div class="contacts">
+            <p>Отдел продаж:</p>
+            <a href="mailto:support@jobtron.com" aria-label="почта">support@jobtron.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="row footer__bottom">
+        <p class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">© 2022 «Jobton», Все права
+          защищены</p>
+        <p class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end flex-wrap">
+          <a href="/" aria-label="Правила сайта">Правила сайта</a>
+          <a href="/" aria-label="Политика конфиденциальности">Политика конфиденциальности</a>
+        </p>
       </div>
     </div>
-    <div class="row footer__bottom">
-      <p class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">© 2022 «Jobton», Все права
-        защищены</p>
-      <p class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end flex-wrap">
-        <a href="/" aria-label="Правила сайта">Правила сайта</a>
-        <a href="/" aria-label="Политика конфиденциальности">Политика конфиденциальности</a>
-      </p>
-    </div>
-  </div>
-</footer>
+  </footer>
+  <script>lazyload();</script>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js?_v=20221107235312"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
