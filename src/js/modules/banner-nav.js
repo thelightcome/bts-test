@@ -29,7 +29,6 @@ export default () => {
         let left = spanStyle.left - contentWrapperStyle.left + spanStyle.width / 2 - 10;
 
         left = left + 40 > contentWrapperStyle.width ? left - 34 : left;
-        console.log(left)
         tild.style.left = left + 'px';
 
         activeElem = itemBtn;

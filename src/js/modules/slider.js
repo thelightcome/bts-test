@@ -1,19 +1,28 @@
 export default () => {
-  const sliders = document.querySelectorAll('[data-role="slider"]');
-
-  for (let i = 0; i < sliders.length; i++) {
-    sliders[i].addEventListener('click', (e) => {
+  document.querySelectorAll('[data-role="slider"]').forEach((slider) => {
+    slider.addEventListener('click', (e) => {
       const sliderItem = e.target.closest('[data-role="slider-item"]');
 
       if (sliderItem) {
         const slider = sliderItem.closest('[data-role="slider"]');
         const current = slider.querySelector('[data-role="slider-current"]');
-        const list = slider.querySelector('[data-role="slider-list"]');
+        const dataSrcItem = sliderItem.querySelector('[data-preview]');
 
-        if (sliderItem.hasAttribute('src')) {
-          let src = sliderItem.src;
-          sliderItem.setAttribute('src', current.src);
-          current.setAttribute('src', src);
+        if (dataSrcItem) {
+          const currentSrc = current.querySelector('[data-preview]');
+          let src = dataSrcItem.dataset.preview;
+          let preview = dataSrcItem.src;
+          dataSrcItem.setAttribute('src', currentSrc.dataset.preview);
+          dataSrcItem.setAttribute('data-preview', currentSrc.src);
+          currentSrc.setAttribute('src', src);
+          currentSrc.setAttribute('data-preview', preview);
+          currentSrc.setAttribute('srcset', src);
+          if (currentSrc.tagName === "VIDEO") currentSrc.poster = preview;
+          let path = src.split('.');
+          path[path.length - 1] = 'webp';
+          current.querySelectorAll('source').forEach((source) => {
+            source.setAttribute('srcset', path.join('.'));
+          });
         } else {
           const newItem = document.createElement('div');
           newItem.classList.add('slider__item');
@@ -31,5 +40,5 @@ export default () => {
         }
       }
     });
-  }
+  })
 }

@@ -6,7 +6,7 @@ import bannerNav from './modules/banner-nav.js';
 
 nav(".nav");
 
-// table(".table");
+table(".table");
 
 tab();
 

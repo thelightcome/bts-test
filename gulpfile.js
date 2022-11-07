@@ -23,12 +23,14 @@ import { otfToTtf, ttfToWoff, fontsStyle } from "./gulp/tasks/fonts.js";
 import { svgSprive } from "./gulp/tasks/svgSprive.js";
 import { zip } from "./gulp/tasks/zip.js";
 import { ftp } from "./gulp/tasks/ftp.js";
+import { videos } from "./gulp/tasks/videos.js";
 
 function watcher() {
   gulp.watch(path.watch.files, copy);
   gulp.watch(path.watch.html, gulp.series(html));
   gulp.watch(path.watch.scss, gulp.series(scss));
   gulp.watch(path.watch.js, gulp.series(js));
+  gulp.watch(path.watch.videos, gulp.series(videos));
   gulp.watch(path.watch.images, gulp.series(images));
 }
 
@@ -36,7 +38,7 @@ export { svgSprive }
 
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 
-const mainTasks = gulp.parallel(copy, html, scss, js, images);
+const mainTasks = gulp.parallel(copy, html, scss, js, videos, images);
 
 const dev = gulp.series(reset, fonts, mainTasks, gulp.parallel(watcher, server));
 const build = gulp.series(reset, fonts, mainTasks);
