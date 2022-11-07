@@ -18,22 +18,22 @@
         <div class="banner-nav">
           <ul class="banner-nav__menu">
             <li class="banner-nav__item" data-target="0">
-              <button class="banner-nav__btn">Личный профиль</button>
+              <button class="banner-nav__btn">Личный профиль <span>?</span></button>
             </li>
             <li class="banner-nav__item" data-target="1">
-              <button class="banner-nav__btn">База знаний</button>
+              <button class="banner-nav__btn">База знаний <span>?</span></button>
             </li>
             <li class="banner-nav__item" data-target="2">
-              <button class="banner-nav__btn">KPI</button>
+              <button class="banner-nav__btn">KPI <span>?</span></button>
             </li>
             <li class="banner-nav__item" data-target="3">
-              <button class="banner-nav__btn">Курсы</button>
+              <button class="banner-nav__btn">Курсы <span>?</span></button>
             </li>
             <li class="banner-nav__item" data-target="4">
-              <button class="banner-nav__btn">Структура компании</button>
+              <button class="banner-nav__btn">Структура компании <span>?</span></button>
             </li>
             <li class="banner-nav__item" data-target="5">
-              <button class="banner-nav__btn">Новости и чат</button>
+              <button class="banner-nav__btn">Новости и чат <span>?</span></button>
             </li>
           </ul>
           <div class="banner-nav__content">
@@ -180,7 +180,7 @@
                 </ul>
               </div>
               <div class="col-12">
-                <a href="#" class="link-btn">Получить бесплатно</a>
+                <a href="#form" class="link-btn">Получить бесплатно</a>
               </div>
             </div>
           </div>
@@ -221,7 +221,7 @@
       </div>
     </section>
 
-    <section class="section reviews">
+    <section id="reviews" class="section reviews">
       <div class="container">
         <div class="row">
           <h1 class="title1 title1--center reviews__title1"><span>Отзывы</span></h1>
@@ -234,7 +234,7 @@
                 <p>Повышайте качество и эффективность работы Вашего бизнеса вместе с нами</p>
               </div>
             </div>
-            <a href="#" class="link-btn reviews__linked-btn order-md-2">Попробовать бесплатно</a>
+            <a href="#form" class="link-btn reviews__linked-btn order-md-2">Попробовать бесплатно</a>
             <div class="reviews__btns order-md-0">
               <button class="reviews__btn reviews__btn--active" data-role="btn" data-id="0"
                 data-target="tab">Видеоотзывы</button>
@@ -246,12 +246,23 @@
             <div class="tab tab--active" data-role="tab" data-id="0">
               <div class="slider" data-role="slider">
                 <div class="slider__current" data-role="slider-current">
-                  <img src="@/img/1.jpg" alt="">
+                  <iframe src="https://www.youtube.com/embed/RGpm3n90Z1A" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
                 </div>
                 <div class="slider__list" data-role="slider-list">
-                  <div class="slider__item" data-role="slider-item"><img src="@/img/2.jpg" alt=""></div>
-                  <div class="slider__item" data-role="slider-item"><img src="@/img/3.jpg" alt=""></div>
-                  <div class="slider__item" data-role="slider-item"><img src="@/img/4.jpg" alt=""></div>
+                  <div class="slider__item" data-role="slider-item"><iframe
+                      src="https://www.youtube.com/embed/M_31HkqQqHo" title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe></div>
+                  <div class="slider__item" data-role="slider-item"><iframe
+                      src="https://www.youtube.com/embed/JYbKL5ZWCWg" title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe></div>
+                  <div class="slider__item" data-role="slider-item"><iframe
+                      src="https://www.youtube.com/embed/ro-R1R8EeEM" title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe></div>
                 </div>
               </div>
             </div>
@@ -284,7 +295,7 @@
       </div>
     </section>
 
-    <section class="section tariffs">
+    <section id="tariffs" class="section tariffs">
       <div class="container">
         <div class="row">
           <div class="title1 title1--center tariffs__title1"><span>Тарифы</span></div>
@@ -422,7 +433,7 @@
       </div>
     </section>
 
-    <section class="section functions">
+    <section id="functions" class="section functions">
       <div class="container">
         <div class="row">
           <div class="title1 title1--center functions__title1"><span>С JOBTRON работать легко и удобно</span></div>
@@ -435,7 +446,7 @@
             <p>Корпоративный портал JOBTRON может интегрироваться с разными CRM, сревисами рассылки, системами учета
               времени и трекинга, в также с другими многофункциональными сервисами/p>
           </div>
-          <div class="col-12 col-md-6 order-md-0 d-flex justify-content-end"><img src="@/img/img-2.jpg"
+          <div class="col-12 col-md-6 order-md-0 d-flex justify-content-end px-4"><img src="@/img/img-2.jpg"
               class="img-response" alt=""></div>
         </div>
         <div class="row">
@@ -444,7 +455,7 @@
             <p>Корпоративный портал JOBTRON может интегрироваться с разными CRM, сревисами рассылки, системами учета
               времени и трекинга, в также с другими многофункциональными сервисами</p>
           </div>
-          <div class="col-12 col-md-6 d-flex justify-content-start"><img src="@/img/img-3.jpg" class="img-response"
+          <div class="col-12 col-md-6 d-flex justify-content-start px-4"><img src="@/img/img-3.jpg" class="img-response"
               alt=""></div>
         </div>
         <div class="row">
@@ -453,7 +464,7 @@
             <p>Корпоративный портал JOBTRON может интегрироваться с разными CRM, сревисами рассылки, системами учета
               времени и трекинга, в также с другими многофункциональными сервисами</p>
           </div>
-          <div class="col-12 col-md-6 order-md-0 d-flex justify-content-end"><img src="@/img/img-4.jpg"
+          <div class="col-12 col-md-6 order-md-0 d-flex justify-content-end px-4"><img src="@/img/img-4.jpg"
               class="img-response" alt=""></div>
         </div>
       </div>
@@ -488,10 +499,10 @@
         </div>
         <div class="row">
           <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-            <p class="d-flex justify-content-center align-items-center">Повышайте качество и эффективность работы Вашего
+            <p class="d-flex justify-content-center align-items-center job-info__text2">Повышайте качество и эффективность работы Вашего
               бизнеса вместе с нами</p>
           </div>
-          <div class="col-12 col-lg-8">
+          <div id="form" class="col-12 col-lg-8">
             <form class="row request">
               <div class="col-12 col-md-4 mb-4 mb-md-0 d-flex justify-content-center align-items-center">
                 <input class="request__input" type="text" placeholder="Ваше имя">

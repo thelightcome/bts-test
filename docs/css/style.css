@@ -1802,6 +1802,7 @@ progress {
 
 html {
   font-size: 8px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1821,7 +1822,7 @@ p {
 }
 
 main {
-  background: url("../img/1.svg") no-repeat 70rem 0%, url("../img/3.svg") no-repeat 60rem 133.7rem, url("../img/4.svg") no-repeat 18rem 341.7rem, url("../img/5.svg") no-repeat 31rem 392.7rem, url("../img/6.svg") no-repeat 7rem 441.7rem;
+  background: url("../img/1.svg") no-repeat -140rem 10rem, url("../img/1.svg") no-repeat 116rem 8rem, url("../img/3.svg") no-repeat 60rem 133.7rem, url("../img/4.svg") no-repeat 18rem 341.7rem, url("../img/5.svg") no-repeat 31rem 392.7rem, url("../img/6.svg") no-repeat 7rem 441.7rem;
 }
 
 .title1 {
@@ -2043,12 +2044,12 @@ main {
   top: 100%;
   left: 0;
   width: 100%;
-  overflow: hidden;
   z-index: 100;
   height: 0;
   background: #ffffff;
   padding: 0rem;
   padding-bottom: 0rem;
+  overflow: hidden;
 }
 
 .header .nav__collapse.active {
@@ -2188,6 +2189,9 @@ main {
   width: 100%;
   height: auto;
   margin-top: 5rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 .banner-nav {
@@ -2263,8 +2267,7 @@ main {
   color: #252525;
 }
 
-.banner-nav__btn:after {
-  content: "?";
+.banner-nav__btn span {
   position: absolute;
   left: 100%;
   bottom: 50%;
@@ -2281,6 +2284,7 @@ main {
 
 .banner-nav__content {
   position: absolute;
+  z-index: 1000;
   left: 0;
   top: 100%;
   width: 100%;
@@ -2289,9 +2293,9 @@ main {
   border-radius: 1.5rem;
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .banner-nav__content--active {
@@ -2440,23 +2444,22 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   max-width: 100%;
 }
 
 .slider__current {
   width: 100%;
   margin-bottom: 1.962rem;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  max-height: 41.5158rem;
+  overflow: hidden;
 }
 
 .slider__current img {
-  width: 100%;
   height: 100%;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -2465,6 +2468,8 @@ main {
   display: block;
   width: 100%;
   height: 100%;
+  min-width: 100%;
+  min-height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   margin: 0 auto;
@@ -2516,6 +2521,8 @@ main {
 .slider__item {
   overflow: hidden;
   max-width: 33%;
+  overflow: hidden;
+  max-height: 13rem;
 }
 
 .slider__item::-webkit-scrollbar {
@@ -2662,6 +2669,12 @@ main {
   line-height: 3rem;
 }
 
+.functions img {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
 .job-info {
   padding-top: 9.8rem;
   margin-bottom: 8.3rem;
@@ -2678,6 +2691,10 @@ main {
   line-height: 3rem;
   text-align: center;
   margin-bottom: 3.5rem;
+}
+
+.job-info__text2 {
+  text-align: center;
 }
 
 .job-info .container > .row:last-child {
@@ -3907,6 +3924,12 @@ main {
   .dropdown-menu-md-end[data-bs-popper] {
     right: 0;
     left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .job-info__text2 {
+    text-align: left;
   }
 }
 
@@ -5944,6 +5967,7 @@ main {
     height: auto;
     padding: 0rem;
     padding-bottom: 0rem;
+    overflow: unset;
   }
 
   .header .nav__list {

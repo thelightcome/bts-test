@@ -6,6 +6,7 @@ $maxFontSize: 10px;
 
 html {
   font-size: $minFontSize;
+  scroll-behavior: smooth;
 }
 
 @media screen and (min-width: 320px) {
@@ -39,7 +40,7 @@ p {
 }
 
 main {
-  background: url('../img/1.svg') no-repeat 70rem 0%, url('../img/3.svg') no-repeat 60rem 133.7rem,
+  background: url('../img/1.svg') no-repeat -140rem 10rem, url('../img/1.svg') no-repeat 116rem 8rem, url('../img/3.svg') no-repeat 60rem 133.7rem,
     url('../img/4.svg') no-repeat 18rem 341.7rem, url('../img/5.svg') no-repeat 31rem 392.7rem,
     url('../img/6.svg') no-repeat 7rem 441.7rem;
 }

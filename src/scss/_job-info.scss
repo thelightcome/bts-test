@@ -15,6 +15,14 @@
     margin-bottom: 3.5rem;
   }
 
+  &__text2 {
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+
   .container > .row:last-child {
     margin-top: 6.8rem;
   }

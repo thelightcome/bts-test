@@ -7,6 +7,7 @@ export default () => {
 
   wrapper.addEventListener('click', (e) => {
     const itemBtn = e.target.closest('.banner-nav__item');
+    const span = itemBtn.querySelector('span');
 
     if (itemBtn) {
       if (activeElem) {
@@ -20,12 +21,16 @@ export default () => {
         document.querySelector('.banner-nav__body[data-id="' + itemBtn.dataset.target + '"]').classList.add('banner-nav__body--active');
 
         const wrapperStyle = wrapper.getBoundingClientRect();
-        const itemBtnStyle = itemBtn.getBoundingClientRect();
+        const spanStyle = span.getBoundingClientRect();
         const contentWrapperStyle = contentWrapper.getBoundingClientRect();
 
-        contentWrapper.style.top = itemBtnStyle.top - wrapperStyle.top + 30 + 'px';
+        contentWrapper.style.top = spanStyle.top - wrapperStyle.top + spanStyle.height * 2.6 + 'px';
 
-        tild.style.left = itemBtnStyle.left - contentWrapperStyle.left + itemBtnStyle.width / 2 - 10 + 'px';
+        let left = spanStyle.left - contentWrapperStyle.left + spanStyle.width / 2 - 10;
+
+        left = left + 40 > contentWrapperStyle.width ? left - 34 : left;
+        console.log(left)
+        tild.style.left = left + 'px';
 
         activeElem = itemBtn;
       } else {

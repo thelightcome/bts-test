@@ -48,6 +48,8 @@
       width: 100%;
       height: auto;
       margin-top: 5rem;
+      border-radius: 1rem;
+      box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
 
       @media screen and (min-width: #{map-get($grid-breakpoints, "lg")}) {
         position: absolute;
@@ -117,8 +119,7 @@
     line-height: 1.5rem;
     color: #252525;
 
-    &:after {
-      content: '?';
+    & span {
       position: absolute;
       left: 100%;
       bottom: 50%;
@@ -136,6 +137,7 @@
 
   &__content {
     position: absolute;
+    z-index: 1000;
     left: 0;
     top: 100%;
     width: 100%;
@@ -143,7 +145,7 @@
     border-radius: 1.5rem;
     opacity: 0;
     pointer-events: none;
-    transition: 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 
     &--active {
       opacity: 1;
