@@ -1,8 +1,8 @@
 <header class="header">
   <div class="container">
-    <a href="/" class="header__logo"><img src="@/img/logo.png" alt="logotype" /></a>
+    <a href="/" class="header__logo" aria-label="логотип"><img src="@/img/logo.png" alt="logotype" /></a>
     <nav class="nav">
-      <button class="nav__btn">
+      <button class="nav__btn" aria-label="Кнопак навигации">
         <span></span>
         <span></span>
         <span></span>
@@ -10,26 +10,26 @@
       <div class="nav__collapse">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#tariffs" class="nav__link">Цены</a>
+            <a href="#tariffs" class="nav__link" aria-label="Цены">Цены</a>
           </li>
           <li class="nav__item">
-            <a href="#reviews" class="nav__link">Отзывы</a>
+            <a href="#reviews" class="nav__link" aria-label="Отзывы">Отзывы</a>
           </li>
           <li class="nav__item">
-            <a href="#functions" class="nav__link">Особенности платформы</a>
+            <a href="#functions" class="nav__link" aria-label="Особенности платформы">Особенности платформы</a>
           </li>
         </ul>
         <div class="nav__ctrl">
-          <a href="#" class="link-btn authorization">Авторизоваться</a>
-          <a href="#" class="login"></a>
+          <a href="#" class="link-btn authorization" aria-label="Авторизоваться">Авторизоваться</a>
+          <a href="#" class="login" aria-label="Страница входа"></a>
           <div class="dropdown langs">
             <button class="dropdown-toggle langs__btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-              aria-expanded="false">
+              aria-expanded="false" aria-label="Смена языка">
               EN
             </button>
             <ul class="dropdown-menu langs__options" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item langs__option" href="#">EN</a></li>
-              <li><a class="dropdown-item langs__option" href="#">RU</a></li>
+              <li><a class="dropdown-item langs__option" href="#" aria-label="Переключение на английский">EN</a></li>
+              <li><a class="dropdown-item langs__option" href="#" aria-label="Переключение на русский">RU</a></li>
             </ul>
           </div>
         </div>

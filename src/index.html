@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 @@include('html/head.html', {
-"title": ""
+"title": "JOBTRON"
 })
 
 <body>
@@ -18,22 +18,22 @@
         <div class="banner-nav">
           <ul class="banner-nav__menu">
             <li class="banner-nav__item" data-target="0">
-              <button class="banner-nav__btn">Личный профиль <span>?</span></button>
+              <button class="banner-nav__btn" aria-label="Личный профиль">Личный профиль <span>?</span></button>
             </li>
             <li class="banner-nav__item" data-target="1">
-              <button class="banner-nav__btn">База знаний <span>?</span></button>
+              <button class="banner-nav__btn" aria-label="База знаний">База знаний <span>?</span></button>
             </li>
             <li class="banner-nav__item" data-target="2">
-              <button class="banner-nav__btn">KPI <span>?</span></button>
+              <button class="banner-nav__btn" aria-label="KPI">KPI <span>?</span></button>
             </li>
             <li class="banner-nav__item" data-target="3">
-              <button class="banner-nav__btn">Курсы <span>?</span></button>
+              <button class="banner-nav__btn" aria-label="Курсы">Курсы <span>?</span></button>
             </li>
             <li class="banner-nav__item" data-target="4">
-              <button class="banner-nav__btn">Структура компании <span>?</span></button>
+              <button class="banner-nav__btn" aria-label="Структура компании">Структура компании <span>?</span></button>
             </li>
             <li class="banner-nav__item" data-target="5">
-              <button class="banner-nav__btn">Новости и чат <span>?</span></button>
+              <button class="banner-nav__btn" aria-label="Новости и чат">Новости и чат <span>?</span></button>
             </li>
           </ul>
           <div class="banner-nav__content">
@@ -180,12 +180,12 @@
                 </ul>
               </div>
               <div class="col-12">
-                <a href="#form" class="link-btn">Получить бесплатно</a>
+                <a href="#form" class="link-btn" aria-label="Получить бесплатно">Получить бесплатно</a>
               </div>
             </div>
           </div>
           <div class="col-12 col-lg-6 overflow-hidden banner__image">
-            <img src="@/img/img-1.jpg" alt="" />
+            <img class="lazyload" src="@/img/img-1.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -234,30 +234,30 @@
                 <p>Повышайте качество и эффективность работы Вашего бизнеса вместе с нами</p>
               </div>
             </div>
-            <a href="#form" class="link-btn reviews__linked-btn order-md-2">Попробовать бесплатно</a>
+            <a href="#form" class="link-btn reviews__linked-btn order-md-2" aria-label="Попробовать бесплатно">Попробовать бесплатно</a>
             <div class="reviews__btns order-md-0">
               <button class="reviews__btn reviews__btn--active" data-role="btn" data-id="0"
-                data-target="tab">Видеоотзывы</button>
-              <button class="reviews__btn" data-role="btn" data-id="1" data-target="tab">Текстовые отзывы</button>
-              <button class="reviews__btn" data-role="btn" data-id="2" data-target="tab">Фотоотзывы</button>
+                data-target="tab" aria-label="Видеоотзывы">Видеоотзывы</button>
+              <button class="reviews__btn" data-role="btn" data-id="1" data-target="tab" aria-label="Текстовые отзывы">Текстовые отзывы</button>
+              <button class="reviews__btn" data-role="btn" data-id="2" data-target="tab" aria-label="Фотоотзывы">Фотоотзывы</button>
             </div>
           </div>
           <div class="col-12 col-md-8 d-flex align-items-center">
             <div class="tab tab--active" data-role="tab" data-id="0">
               <div class="slider" data-role="slider">
                 <div class="slider__current" data-role="slider-current">
-                  <video src="@/videos/1.mp4" controls muted poster="@/img/1-v-preview.jpg"
+                  <video src="@/videos/1.mp4" preload="none" controls muted poster="@/img/1-v-preview.jpg"
                     data-preview="@/img/1-v-preview.jpg"></video>
                 </div>
                 <div class="slider__list" data-role="slider-list">
                   <div class="slider__item" data-role="slider-item">
-                    <img src="@/img/2-v-preview.jpg" data-preview="@/videos/2.mp4" alt="">
+                    <img class="lazyload" src="@/img/2-v-preview.jpg" data-preview="@/videos/2.mp4" alt="">
                   </div>
                   <div class="slider__item" data-role="slider-item">
-                    <img src="@/img/3-v-preview.jpg" data-preview="@/videos/3.mp4" alt="">
+                    <img class="lazyload" src="@/img/3-v-preview.jpg" data-preview="@/videos/3.mp4" alt="">
                   </div>
                   <div class="slider__item" data-role="slider-item">
-                    <img src="@/img/4-v-preview.jpg" data-preview="@/videos/4.mp4" alt="">
+                    <img class="lazyload" src="@/img/4-v-preview.jpg" data-preview="@/videos/4.mp4" alt="">
                   </div>
                 </div>
               </div>
@@ -265,29 +265,29 @@
             <div class="tab" data-role="tab" data-id="1">
               <div class="slider" data-role="slider">
                 <div class="slider__current" data-role="slider-current">
-                  <img src="@/img/5.jpg" data-preview="@/img/5-preview.jpg" alt="">
+                  <img class="lazyload" src="@/img/5.jpg" data-preview="@/img/5-preview.jpg" alt="">
                 </div>
                 <div class="slider__list" data-role="slider-list">
-                  <div class="slider__item" data-role="slider-item"><img src="@/img/6-preview.jpg"
+                  <div class="slider__item" data-role="slider-item"><img class="lazyload" src="@/img/6-preview.jpg"
                       data-preview="@/img/6.jpg" alt=""></div>
-                  <div class="slider__item" data-role="slider-item"><img src="@/img/7-preview.jpeg"
-                      data-preview="@/img/7.jpeg" alt=""></div>
-                  <div class="slider__item" data-role="slider-item"><img src="@/img/8-preview.jpeg"
-                      data-preview="@/img/8.jpeg" alt=""></div>
+                  <div class="slider__item" data-role="slider-item"><img class="lazyload"
+                      src="@/img/7-preview.jpeg" data-preview="@/img/7.jpeg" alt=""></div>
+                  <div class="slider__item" data-role="slider-item"><img class="lazyload"
+                      src="@/img/8-preview.jpeg" data-preview="@/img/8.jpeg" alt=""></div>
                 </div>
               </div>
             </div>
             <div class="tab" data-role="tab" data-id="2">
               <div class="slider" data-role="slider">
                 <div class="slider__current" data-role="slider-current">
-                  <img src="@/img/1.jpg" data-preview="@/img/1-preview.jpg" alt="">
+                  <img class="lazyload" src="@/img/1.jpg" data-preview="@/img/1-preview.jpg" alt="">
                 </div>
                 <div class="slider__list" data-role="slider-list">
-                  <div class="slider__item" data-role="slider-item"><img src="@/img/7-preview.jpeg"
-                      data-preview="@/img/7.jpeg" alt=""></div>
-                  <div class="slider__item" data-role="slider-item"><img src="@/img/3-preview.jpg"
+                  <div class="slider__item" data-role="slider-item"><img class="lazyload"
+                      src="@/img/7-preview.jpeg" data-preview="@/img/7.jpeg" alt=""></div>
+                  <div class="slider__item" data-role="slider-item"><img class="lazyload" src="@/img/3-preview.jpg"
                       data-preview="@/img/3.jpg" alt=""></div>
-                  <div class="slider__item" data-role="slider-item"><img src="@/img/6-preview.jpg"
+                  <div class="slider__item" data-role="slider-item"><img class="lazyload" src="@/img/6-preview.jpg"
                       data-preview="@/img/6.jpg" alt=""></div>
                 </div>
               </div>
@@ -448,8 +448,8 @@
             <p>Корпоративный портал JOBTRON может интегрироваться с разными CRM, сревисами рассылки, системами учета
               времени и трекинга, в также с другими многофункциональными сервисами/p>
           </div>
-          <div class="col-12 col-md-6 order-md-0 d-flex justify-content-end px-4"><img src="@/img/img-2.jpg"
-              class="img-response" alt=""></div>
+          <div class="col-12 col-md-6 order-md-0 d-flex justify-content-end px-4"><img class="lazyload"
+              src="@/img/img-2.jpg" class="img-response" alt=""></div>
         </div>
         <div class="row">
           <div class="col-12 col-md-6 mb-4 mb-md-0 col-lg-5 offset-lg-1">
@@ -457,8 +457,8 @@
             <p>Корпоративный портал JOBTRON может интегрироваться с разными CRM, сревисами рассылки, системами учета
               времени и трекинга, в также с другими многофункциональными сервисами</p>
           </div>
-          <div class="col-12 col-md-6 d-flex justify-content-start px-4"><img src="@/img/img-3.jpg" class="img-response"
-              alt=""></div>
+          <div class="col-12 col-md-6 d-flex justify-content-start px-4"><img class="lazyload"
+              src="@/img/img-3.jpg" class="img-response" alt=""></div>
         </div>
         <div class="row">
           <div class="col-12 col-md-6 mb-4 mb-md-0 order-md-1 col-lg-5">
@@ -466,8 +466,8 @@
             <p>Корпоративный портал JOBTRON может интегрироваться с разными CRM, сревисами рассылки, системами учета
               времени и трекинга, в также с другими многофункциональными сервисами</p>
           </div>
-          <div class="col-12 col-md-6 order-md-0 d-flex justify-content-end px-4"><img src="@/img/img-4.jpg"
-              class="img-response" alt=""></div>
+          <div class="col-12 col-md-6 order-md-0 d-flex justify-content-end px-4"><img class="lazyload"
+              src="@/img/img-4.jpg" class="img-response" alt=""></div>
         </div>
       </div>
     </section>
@@ -514,7 +514,7 @@
                 <input class="request__input" type="number" placeholder="Номер телефона">
               </div>
               <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
-                <button class="link-btn request__btn" type="submit">Попробовать бесплатно</button>
+                <button class="link-btn request__btn" type="submit" aria-label="Попробовать бесплатно">Попробовать бесплатно</button>
               </div>
             </form>
           </div>
@@ -525,6 +525,12 @@
 
   @@include('html/footer.html', {})
 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
   <script src="js/app.min.js"></script>
 </body>
 

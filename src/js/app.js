@@ -3,6 +3,7 @@ import table from './modules/table.js';
 import tab from './modules/tab.js';
 import slider from './modules/slider.js';
 import bannerNav from './modules/banner-nav.js';
+// lazyload();
 nav(".nav");
 table(".table");
 tab();
