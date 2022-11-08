@@ -39,6 +39,16 @@ p {
   margin: 0;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 main {
   background: url('../img/1.svg') no-repeat -140rem 10rem, url('../img/1.svg') no-repeat 116rem 8rem, url('../img/3.svg') no-repeat 60rem 133.7rem,
     url('../img/4.svg') no-repeat 18rem 341.7rem, url('../img/5.svg') no-repeat 31rem 392.7rem,
